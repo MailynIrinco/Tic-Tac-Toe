@@ -2,10 +2,10 @@ namespace _10
 {
     public partial class Form1 : Form
     {
-        //TURN
+        //TURNS
         bool turn = true;
         byte turnCount = 0;
-
+        bool checker;
         public Form1()
         {
             InitializeComponent();
@@ -14,17 +14,24 @@ namespace _10
         //BUTTONS1-9
         private void butt1_Click(object sender, EventArgs e)
         {
-
             if (turn == true)
             {
                 butt1.Text = "X";
             }
             else butt1.Text = "O";
             {
-
                 turn = !turn;
                 turnCount++;
                 butt1.Enabled = false;
+            }
+            if (checker == false)
+            {
+                checker = true;
+            }
+            else
+            {
+                checker = false;
+                MessageBox.Show("OOO");
             }
         }
         private void butt2_Click(object sender, EventArgs e)
@@ -38,6 +45,15 @@ namespace _10
                 turn = !turn;
                 turnCount++;
                 butt2.Enabled = false;
+            }
+            if (checker == false)
+            {
+                checker = true;
+            }
+            else
+            {
+                checker = false;
+                MessageBox.Show("OOO");
             }
         }
 
@@ -53,6 +69,15 @@ namespace _10
                 turnCount++;
                 butt3.Enabled = false;
             }
+            if (checker == false)
+            {
+                checker = true;
+            }
+            else
+            {
+                checker = false;
+                MessageBox.Show("OOO");
+            }
         }
 
         private void butt4_Click(object sender, EventArgs e)
@@ -66,6 +91,15 @@ namespace _10
                 turn = !turn;
                 turnCount++;
                 butt4.Enabled = false;
+            }
+            if (checker == false)
+            {
+                checker = true;
+            }
+            else
+            {
+                checker = false;
+                MessageBox.Show("OOO");
             }
         }
 
@@ -81,10 +115,19 @@ namespace _10
                 turnCount++;
                 butt5.Enabled = false;
             }
+            if (checker == false)
+            {
+                checker = true;
+            }
+            else
+            {
+                checker = false;
+                MessageBox.Show("OOO");
+            }
         }
 
         private void butt6_Click(object sender, EventArgs e)
-        { 
+        {
             if (turn == true)
             {
                 butt6.Text = "X";
@@ -95,6 +138,7 @@ namespace _10
                 turnCount++;
                 butt6.Enabled = false;
             }
+
         }
 
         private void butt7_Click(object sender, EventArgs e)
@@ -109,6 +153,7 @@ namespace _10
                 turnCount++;
                 butt7.Enabled = false;
             }
+
         }
 
         private void butt8_Click(object sender, EventArgs e)
@@ -123,6 +168,7 @@ namespace _10
                 turnCount++;
                 butt8.Enabled = false;
             }
+
         }
 
         private void butt9_Click(object sender, EventArgs e)
@@ -165,10 +211,9 @@ namespace _10
         }
 
         //CHECKFORWINNER
-        private void check_Winner () 
+        void check_Winner()
         {
             bool foraWinner = false;
-
             //DIAGONAL
             if ((butt1.Text == butt5.Text) && (butt5.Text == butt9.Text) && (butt1.Text != ""))
                 foraWinner = true;
@@ -204,6 +249,8 @@ namespace _10
             else if (turnCount == 9) ;
             {
                 MessageBox.Show("It's a Draw" + "Click restart for a new game");
+
+
             }
         }
     }
