@@ -5,7 +5,7 @@ namespace _10
         //TURNS
         bool turn = true;
         byte turnCount = 0;
-        bool checker;
+      
         public Form1()
         {
             InitializeComponent();
@@ -24,15 +24,15 @@ namespace _10
                 turnCount++;
                 butt1.Enabled = false;
             }
-            if (checker == false)
+
+            if (butt1.Text == butt5.Text)
             {
-                checker = true;
+                if (butt5.Text == butt9.Text)
+                {
+                    MessageBox.Show(butt1.Text + "WEH");
+                }
             }
-            else
-            {
-                checker = false;
-                MessageBox.Show("OOO");
-            }
+           
         }
         private void butt2_Click(object sender, EventArgs e)
         {
@@ -46,15 +46,7 @@ namespace _10
                 turnCount++;
                 butt2.Enabled = false;
             }
-            if (checker == false)
-            {
-                checker = true;
-            }
-            else
-            {
-                checker = false;
-                MessageBox.Show("OOO");
-            }
+            
         }
 
         private void butt3_Click(object sender, EventArgs e)
@@ -69,15 +61,7 @@ namespace _10
                 turnCount++;
                 butt3.Enabled = false;
             }
-            if (checker == false)
-            {
-                checker = true;
-            }
-            else
-            {
-                checker = false;
-                MessageBox.Show("OOO");
-            }
+           
         }
 
         private void butt4_Click(object sender, EventArgs e)
@@ -92,15 +76,7 @@ namespace _10
                 turnCount++;
                 butt4.Enabled = false;
             }
-            if (checker == false)
-            {
-                checker = true;
-            }
-            else
-            {
-                checker = false;
-                MessageBox.Show("OOO");
-            }
+           
         }
 
         private void butt5_Click(object sender, EventArgs e)
@@ -115,15 +91,7 @@ namespace _10
                 turnCount++;
                 butt5.Enabled = false;
             }
-            if (checker == false)
-            {
-                checker = true;
-            }
-            else
-            {
-                checker = false;
-                MessageBox.Show("OOO");
-            }
+     
         }
 
         private void butt6_Click(object sender, EventArgs e)
