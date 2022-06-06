@@ -24,14 +24,14 @@ namespace _10
                 turnCount++;
                 butt1.Enabled = false;
             }
-            //Diagonal
+            //Diag
             if (butt1.Text == butt5.Text)
             {
                 if (butt5.Text == butt9.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
 
             }
-            //Vertical
+            //Vert
             if (butt1.Text == butt4.Text)
             {
                 if (butt4.Text == butt7.Text)
@@ -57,12 +57,19 @@ namespace _10
                 turnCount++;
                 butt2.Enabled = false;
             }
-            //Vertical
+            //Vert
             if (butt2.Text == butt5.Text)
             {
                 if (butt5.Text == butt8.Text)
                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
             }
+            //Hori
+            if (butt1.Text == butt2.Text)
+            {
+                if (butt2.Text == butt3.Text)
+                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
+            }
+
 
         }
 
@@ -78,16 +85,22 @@ namespace _10
                 turnCount++;
                 butt3.Enabled = false;
             }
-            //Vertical
+            //Vert
             if (butt3.Text == butt6.Text)
             {
                 if (butt6.Text == butt9.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
             }
-            //Diagonal
+            //Diag
             if (butt3.Text == butt5.Text)
             {
                 if (butt5.Text == butt7.Text)
+                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
+            }
+            //Hori
+            if (butt1.Text == butt2.Text)
+            {
+                if (butt2.Text == butt3.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
             }
 
@@ -132,18 +145,30 @@ namespace _10
                 turnCount++;
                 butt5.Enabled = false;
             }
-            //Vertical
+            //Vert
+            if (butt2.Text == butt5.Text)
+            {
+                if (butt5.Text == butt8.Text)
+                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
+            }
+            //Hori
             if (butt4.Text == butt5.Text)
             {
                 if (butt5.Text == butt6.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
             }
-            //Diagonal
+            //Diag
             if (butt1.Text == butt5.Text)
             {
                 if (butt5.Text == butt9.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
 
+            }
+            //Diag
+            if (butt3.Text == butt5.Text)
+            {
+                if (butt5.Text == butt7.Text)
+                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
             }
 
         }
@@ -160,9 +185,16 @@ namespace _10
                 turnCount++;
                 butt6.Enabled = false;
             }
+            //Hori
             if (butt4.Text == butt5.Text)
             {
                 if (butt5.Text == butt6.Text)
+                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
+            }
+            //Vert
+            if (butt3.Text == butt6.Text)
+            {
+                if (butt6.Text == butt9.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
             }
 
@@ -180,12 +212,25 @@ namespace _10
                 turnCount++;
                 butt7.Enabled = false;
             }
-            //Vertical
+            //Hori
             if (butt7.Text == butt8.Text)
             {
                 if (butt8.Text == butt9.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
             }
+            //Vert
+            if (butt1.Text == butt4.Text)
+            {
+                if (butt4.Text == butt7.Text)
+                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
+            }
+            //Diag
+            if (butt3.Text == butt5.Text)
+            {
+                if (butt5.Text == butt7.Text)
+                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
+            }
+
         }
 
         private void butt8_Click(object sender, EventArgs e)
@@ -200,9 +245,16 @@ namespace _10
                 turnCount++;
                 butt8.Enabled = false;
             }
+            //Vert
             if (butt2.Text == butt5.Text)
             {
                 if (butt5.Text == butt8.Text)
+                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
+            }
+            //Hori
+            if (butt7.Text == butt8.Text)
+            {
+                if (butt8.Text == butt9.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
             }
 
@@ -220,19 +272,28 @@ namespace _10
                 turnCount++;
                 butt9.Enabled = false;
             }
+            //Diag
             if (butt1.Text == butt5.Text)
             {
                 if (butt5.Text == butt9.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!","WINNER YARN!");
             }
+            //Ver
             if (butt3.Text == butt6.Text)
             {
                 if (butt6.Text == butt9.Text)
                     MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
             }
+            //Hori
+            if (butt7.Text == butt8.Text)
+            {
+                if (butt8.Text == butt9.Text)
+                    MessageBox.Show("BIGYAN NG WASHING MACHINE YAN!", "WINNER YARN!");
+            }
+
         }
 
-        //THEWHOLE
+        //FORALL
         private void Form1_Load(object sender, EventArgs e)
         {
             Button a = new Button();
